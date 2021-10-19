@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание сайта">
+    <title>Главная | PixelArt</title>
+    <link rel="stylesheet" href="./css/vendor.min.css?v=0.0.0.0">
+    <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
+  </head>
+  <body class="page-home">
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="site-container site-header__container"><a class="site-logo" href="" aria-label="Логотип"><img class="site-logo__logo" src="img/logo.png" alt="Лого"><span class="site-logo__text">	Включим яркость твоих эмоций на MAX</span></a>
+          <div class="site-header__links"><a class="phone-content" href="tel: +79391110857">	+7 (939) 111-08-57</a>
+            <button class="site-header__button-call button-reset">	Перезвонить мне</button>
+          </div>
+          <div class="site-header__contacts">
+            <div class="_contacts-group"><span>	Кремлевская, 21</span><span>	Соловецких юнг, 1</span></div>
+            <div class="_contacts-group"><span>	пн&nbsp;- чт: 10:00&nbsp;-&nbsp;22:00</span><span>	пт&nbsp;- вс: 12:00&nbsp;-&nbsp;24:00</span></div>
+          </div>
+        </div>
+      </header>
+      <main class="page-main main">
+        <section class="hero">
+          <div class="hero__bg lazy" data-bg="img/hero-bg222.webp" data-bg-fallback="img/hero-bg222.png"></div>
+          <div class="hero__bg-stars lazy" data-bg="img/stars.webp" data-bg-fallback="img/stars.png"></div>
+          <div class="_layer hero__rock lazy" data-bg="img/hero-rock.webp" data-bg-fallback="img/hero-rock.png"></div>
+          <div class="_layer hero__rock _small lazy" data-bg="img/hero-rock-small.webp" data-bg-fallback="img/hero-rock-small.png"></div>
+          <div class="_layer hero__plane _small lazy" data-bg="img/plane.webp" data-bg-fallback="img/plane.png"></div>
+          <canvas class="hero__matrix-container"></canvas>
+          <div class="site-container hero__container"><span class="hero__subtitle">	Попробуй новый формат VR-развлечений</span>
+            <h1><span>Клуб <br> виртуальной реальности</span>&nbsp;первый открывшийся в&nbsp;Казани</h1>
+            <ul>
+              <li><span>	50+ игр от 7 лет</span>	1-4 человека</li>
+              <li><span>	VR-квесты</span>	4 формата</li>
+              <li><span>	ДР и корпоративы</span>	аренда клуба</li>
+              <li><span>	VR едет к вам</span>	события и прокат</li>
+            </ul>
+            <button class="hero__button button-secondary button-reset">
+              <svg class="icon icon-secondary-button button-secondary__icon">
+                <use xlink:href="img/sprite.svg#secondary-button"></use>
+              </svg>	Бронировать в<span>	Whats App</span>
+            </button>
+          </div>
+        </section>
+        <section class="section hot-stock">
+          <div class="site-container hot-stock__container">
+            <div class="hot-stock__title">
+              <h2><span>	горячие акции</span>	сезона осень<br>	2021</h2>
+            </div>
+            <div class="hot-stock__slider hot-stock-slider swiper-container">
+              <div class="hot-stock__slider-nav slider-navigation">
+                <button class="button-reset slider-navigation__nav-button _right hot-stock-slider__nav-button" aria-label="Переключить на следующий слайд">
+                  <svg class="icon icon-right-arrow-nav slider-navigation__nav-icon">
+                    <use xlink:href="img/sprite.svg#right-arrow-nav"></use>
+                  </svg>
+                </button>
+                <button class="button-reset slider-navigation__nav-button _left hot-stock-slider__nav-button" aria-label="Переключить на предыдущий слайд">
+                  <svg class="icon icon-left-arrow-nav slider-navigation__nav-icon">
+                    <use xlink:href="img/sprite.svg#left-arrow-nav"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hot-stock-slider__item">
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
+                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hot-stock-slider__item">
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
+                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hot-stock-slider__item">
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
+                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hot-stock-slider__item">
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
+                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section vr-room">
+          <div class="vr-room__vr-lines lazy" data-bg="img/vr-lines.webp" data-bg-fallback="img/vr-lines.png"></div>
+          <div class="site-container vr-room__container">
+            <div class="vr-room__title">
+              <h2><span>	vr-room</span>	для игр только своей компанией</h2>
+              <p>	Без посторонних на площадке</p>
+            </div>
+          </div>
+          <div class="vr-room__slider vr-room-slider swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide vr-room-slider__item lazy" data-bg="img/vr-room-image0.webp" data-bg-fallback="img/vr-room-image0.png">
+                <div class="vr-room-slider__info">	Мягкое покрытие стен 100% травмобезопасность
+                  <div class="vr-room-slider__info-plus"><span class="_span"></span><span class="_span"></span></div>
+                </div>
+              </div>
+              <div class="swiper-slide vr-room-slider__item lazy" data-bg="img/vr-room-image1.webp" data-bg-fallback="img/vr-room-image1.png">
+                <div class="vr-room-slider__info">	Мягкое покрытие стен 100% травмобезопасность
+                  <div class="vr-room-slider__info-plus"><span class="_span"></span><span class="_span"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section games-slider lazy" data-bg="img/games-slider-bg.webp" data-bg-fallback="img/games-slider-bg.png">
+          <div class="site-container games-slider__container">
+            <div class="games-slider__controls _left _layer lazy" data-bg="img/controls-left.webp" data-bg-fallback="img/controls-left.png"></div>
+            <div class="games-slider__controls _right _layer lazy" data-bg="img/controls-right.webp" data-bg-fallback="img/controls-right.png"></div>
+            <div class="games-slider__title">
+              <div class="_layer lazy" data-bg="img/games-title-bg.webp" data-bg-fallback="img/games-title-bg.png"></div>
+              <h2>	Попробуйте несколько игр<span>	за 1 сеанс</span></h2>
+            </div>
+            <div class="games-slider__navigation slider-navigation">
+              <button class="button-reset slider-navigation__nav-button games-slider__nav-button _left">
+                <svg class="icon icon-left-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#left-arrow-nav"></use>
+                </svg>
+              </button>
+              <button class="button-reset slider-navigation__nav-button games-slider__nav-button _right">
+                <svg class="icon icon-right-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-nav"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="games-slider__slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game0.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">payday2</span><span class="games-slider__item-subheading">Шутер</span></div>
+                </div>
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game1.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">GORN</span><span class="games-slider__item-subheading">Файлинг</span></div>
+                </div>
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game2.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">THE LAB</span><span class="games-slider__item-subheading">Приключения</span></div>
+                </div>
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game3.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">THEBLU</span><span class="games-slider__item-subheading">Эмоции</span></div>
+                </div>
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game4.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">TILT BRASH</span><span class="games-slider__item-subheading">Искусство</span></div>
+                </div>
+                <div class="games-slider__item swiper-slide">
+                  <div class="games-slider__item-top">
+                    <div class="games-slider__item-hover"><span class="games-slider__item-hover-text">	Обзор игры</span></div><img class="games-slider__item-img lazy" data-src="img/games/game5.jpg" src="#" alt="Игра">
+                  </div>
+                  <div class="games-slider__item-info"><span class="games-slider__item-heading">BUDGET CUTS</span><span class="games-slider__item-subheading">Аркада</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section differences lazy" data-bg="img/space-bg.webp" data-bg-fallback="img/space-bg.png">
+          <div class="_layer digital-palms lazy" data-bg="img/digital-palms.webp" data-bg-fallback="img/digital-palms.png"></div>
+          <div class="_layer dragon lazy" data-bg="img/gragon.webp" data-bg-fallback="img/gragon.png"></div>
+          <div class="_layer smog lazy" data-bg="img/smog.webp" data-bg-fallback="img/smog.png"></div>
+          <div class="_layer sonic lazy" data-bg="img/sonic.webp" data-bg-fallback="img/sonic.png"></div>
+          <div class="_layer DeLoreanDMC12 lazy" data-bg="img/DeLoreanDMC12.webp" data-bg-fallback="img/DeLoreanDMC12.png"></div>
+          <div class="_layer CrashBandicoot lazy" data-bg="img/CrashBandicoot.webp" data-bg-fallback="img/CrashBandicoot.png"></div>
+          <div class="site-container differences__container">
+            <div class="differences__title">
+              <h2>	6 отличий нашего клуба от конкурентов</h2>
+            </div>
+            <div class="differences__list">
+              <div class="differences__item">
+                <p>
+                  	Часть конкурентов сделали ставку на&nbsp;большую площадь помещений.
+                  	Наши гости приходят играть, а&nbsp;не&nbsp;бежать марафон.
+                  	Поэтому мы&nbsp;создали, пожалуй, лучший сервис в&nbsp;городе.
+                  	Мы&nbsp;уделяем внимание каждого клиенту,
+                  	т.к.&nbsp;не&nbsp;тонем в&nbsp;многопоточности.
+                </p>
+              </div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img0.svg" alt="Бесплатная парковка"><span class="differences__item-legend">Бесплатная парковка</span><span class="differences__item-text">Всегда есть свободные места</span></div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img1.svg" alt="Инструктаж"><span class="differences__item-legend">Инструктаж</span><span class="differences__item-text">Объясним, научим  и посоветуем игру </span></div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img2.svg" alt="Фото и видео"><span class="differences__item-legend">Фото и видео</span><span class="differences__item-text">Сохраните эмоции  на память </span></div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img3.svg" alt="Еда и общение"><span class="differences__item-legend">Еда и общение</span><span class="differences__item-text">В 2-х минутах ходьбы: Макдональдс, Starbax, Киномакс, Хочу и буду</span></div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img4.svg" alt="NonStop"><span class="differences__item-legend">NonStop</span><span class="differences__item-text">Не выключаем игру, если вы не закончили, расчет по факту</span></div>
+              <div class="differences__item"><img class="differences__item-img" src="img/differences/differences-img5.svg" alt="Чистое время"><span class="differences__item-legend">Чистое время</span><span class="differences__item-text">Отсчет начинается с игры, а не с инструктажа</span></div>
+            </div>
+          </div>
+        </section>
+        <section class="section services">
+          <div class="services__cube-img lazy" data-bg="img/cube-image.webp" data-bg-fallback="img/cube-image.png"></div>
+          <div class="services__mineCraftCube _layer lazy" data-bg="img/mineCraftCube.webp" data-bg-fallback="img/mineCraftCube.png"></div>
+          <div class="services__mineCraftCube-small _layer lazy" data-bg="img/mineCraftCube-small.webp" data-bg-fallback="img/mineCraftCube-small.png"></div>
+          <div class="services__mineCraftCube-smaller _layer lazy" data-bg="img/mineCraftCube-smaller.webp" data-bg-fallback="img/mineCraftCube-smaller.png"></div>
+          <div class="services__mineCraftCube-tiny _layer lazy" data-bg="img/mineCraftCube-tiny.webp" data-bg-fallback="img/mineCraftCube-tiny.png"></div>
+          <div class="services__mineCraftCubeTNT-small _layer lazy" data-bg="img/mineCraftCubeTNT-small.webp" data-bg-fallback="img/mineCraftCubeTNT-small.png"></div>
+          <div class="services__mineCraftCubeTNT-smaller _layer lazy" data-bg="img/mineCraftCubeTNT-smaller.webp" data-bg-fallback="img/mineCraftCubeTNT-smaller.png"></div>
+          <div class="services__heading-lines">
+            <div class="services__heading-line _line-first lazy" data-bg="img/services-line-bg.webp" data-bg-fallback="img/services-line-bg.png"><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span>
+            </div>
+            <div class="services__heading-line _line-second"><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span><span class="_span">	Услуги</span>
+            </div>
+          </div>
+          <div class="site-container services__container">
+            <div class="services__title">
+              <h2>	которые могу вас<span>	заинтересовать</span></h2>
+            </div>
+            <ul class="services__accordion accordion">
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Квесты VR"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Квесты VR</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Wow-эмоции от квестов ВР</span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image0.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Ваш праздник в клубе"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Ваш праздник в клубе</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Организуем мероприятие любого масштаба «под ключ»</span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image1.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Выездные мероприятия"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Выездные мероприятия</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Даже президент Республики Татарстан надевал наши шлемы</span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image2.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Прокат оборудования"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Прокат оборудования</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Привезем и настроим оборудование к вам домой, в офис, любое другое место </span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image3.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Франшиза"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Франшиза</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Поможем открыть высокодоходный бизнес</span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image4.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+              <li class="accordion__item">
+                <button class="accordion__close button-reset js--accordion-close" aria-label="Открыть Сертификаты  и абонементы"><span class="_line"></span><span class="_line"></span></button>
+                <div class="accordion__item-top js--accordion-open">
+                  <div class="accordion__item-left"><span class="accordion__item-heading">Сертификаты  и абонементы</span></div>
+                  <div class="accordion__item-right"><span class="accordion__item-legend">Готовые подарки себе  и близким </span></div>
+                </div>
+                <div class="accordion__item-bottom"><span class="accordion__item-left"><img class="accordion__item-image lazy" data-src="img/accordion-image5.webp" alt="Wow-эмоции от квестов"></span><span class="accordion__item-info accordion__item-right">
+                    <ul>
+                      <li>	Грань между реальностью  и виртуальным миром будет стерта</li>
+                      <li>	4 квеста на выбор для возраста от 7 лет</li>
+                      <li>	Отличная альтернатива классическим квестам, лазертаг, пейнтбол и пр.</li>
+                    </ul>
+                    <button class="button-reset third-button accordion__button">	Узнать подробнее
+                      <svg class="icon icon-form-icon third-button__icon accordion__button-icon">
+                        <use xlink:href="img/sprite.svg#form-icon"></use>
+                      </svg>
+                    </button></span></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section section-price">
+          <div class="section-price__tentacles _layer lazy" data-bg="img/price-tentacles.webp" data-bg-fallback="img/price-tentacles.png"></div>
+          <div class="section-price__sharkkdodododo _layer lazy" data-bg="img/sharkkk.webp" data-bg-fallback="img/sharkkk.png"></div>
+          <div class="section-price__diver _layer lazy" data-bg="img/diver.webp" data-bg-fallback="img/diver.png"></div>
+          <div class="section-price__bomb _layer lazy" data-bg="img/bomb.webp" data-bg-fallback="img/bomb.png"></div>
+          <div class="section-price__mineCraftCube _layer lazy" data-bg="img/mineCraftCube.webp" data-bg-fallback="img/mineCraftCube.png"></div>
+          <div class="site-container section-price__container">
+            <div class="section-price__title"><span class="_titleIcon _left-icon">	{</span><span class="_titleIcon _right-icon">	}</span>
+              <h2>Прайс</h2>
+            </div>
+            <ul class="section-price__list">
+              <li class="section-price__item"><span class="section-price__item-head">	Будни до 16:00</span>
+                <div class="section-price__item-price">	15 мин. - 250 ₽</div>
+                <div class="section-price__item-price">	15 мин. - 250 ₽</div>
+                <div class="section-price__item-price">	15 мин. - 250 ₽</div>
+                <button class="button-reset third-button section-price__button">	Бронировать
+                  <svg class="icon icon-form-icon third-button__icon section-price__button-icon">
+                    <use xlink:href="img/sprite.svg#form-icon"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="section-price__item"><span class="section-price__item-head">	Будни с 16:00</span>
+                <div class="section-price__item-price">	15 мин. - 300 ₽</div>
+                <div class="section-price__item-price">	20 мин. - 400 ₽</div>
+                <div class="section-price__item-price">	1 час - 650 ₽</div>
+                <button class="button-reset third-button section-price__button">	Бронировать
+                  <svg class="icon icon-form-icon third-button__icon section-price__button-icon">
+                    <use xlink:href="img/sprite.svg#form-icon"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="section-price__item"><span class="section-price__item-head">	Выходные  и праздники</span>
+                <div class="section-price__item-price">	20 мин. - 450 ₽</div>
+                <div class="section-price__item-price">	15 мин. - 350 ₽</div>
+                <div class="section-price__item-price">	1 час - 750 ₽</div>
+                <button class="button-reset third-button section-price__button">	Бронировать
+                  <svg class="icon icon-form-icon third-button__icon section-price__button-icon">
+                    <use xlink:href="img/sprite.svg#form-icon"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="section-price__item"><span class="section-price__item-head">	Аренда клуба</span>
+                <div class="section-price__item-price">	1 час - 6 250 ₽</div>
+                <div class="section-price__item-price">	2 часа - 10 000 ₽</div>
+                <div class="section-price__item-price">	3 часа - 12 500 ₽</div>
+                <div class="section-price__item-price">	Каждый дополнительный  час +2 250 ₽</div>
+                <button class="button-reset third-button section-price__button">	Бронировать
+                  <svg class="icon icon-form-icon third-button__icon section-price__button-icon">
+                    <use xlink:href="img/sprite.svg#form-icon"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="section-price__text">
+              <p>	Стоимость указана за 1 игрока без учета действующих скидок и акций</p>
+              <p>	У нас 4 шлема VR, играют компании до 8 человек</p>
+              <p>	Посетителей в состоянии алкогольного опьянения администратор вправе  не допускать до игры</p>
+            </div>
+          </div>
+        </section>
+        <section class="section reviews">
+          <div class="site-container reviews__container">
+            <div class="reviews__millenniumFalcon">
+              <div class="_layer reviews__millenniumFalcon-ship lazy" data-bg="img/millenniumFalcon.webp" data-bg-fallback="img/millenniumFalcon.png"></div>
+              <div class="_layer reviews__millenniumFalcon-light lazy" data-bg="img/millenniumFalconLight.webp" data-bg-fallback="img/millenniumFalconLight.png"></div>
+            </div>
+            <div class="reviews__title">
+              <h2>	Вы 100% будете под впечатлением<br>	Как и 14 328 наших гостей, испытавших мир VR</h2>
+            </div>
+            <div class="reviews__slider-navigation slider-navigation">
+              <button class="button-reset slider-navigation__nav-button reviews__slider-nav-button _left">
+                <svg class="icon icon-left-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#left-arrow-nav"></use>
+                </svg>
+              </button>
+              <button class="button-reset slider-navigation__nav-button reviews__slider-nav-button _right">
+                <svg class="icon icon-right-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-nav"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="reviews__slider reviews-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews-slider__slide">
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _first" data-src="img/image-review.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review2.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _second" data-src="img/image-review2.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review3.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _third" data-src="img/image-review3.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review4.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _fourth" data-src="img/image-review4.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <div class="reviews-slider__item">
+                    <div class="reviews-slider__head">
+                      <div class="reviews-slider__logo"><img class="reviews-slider__image" src="img/slider-logo.png" alt="Эмиль Ш."></div>
+                      <div class="reviews-slider__info"><span class="reviews-slider__name">	Эмиль Ш.</span><span class="reviews-slider__text">	знаток города</span><span class="reviews-slider__text">	26 апреля 2019</span></div>
+                    </div>
+                    <div class="reviews-slider__content">
+                      <p>
+                        	Случайно наткнувшись на&nbsp;это место, припарковавшись у&nbsp;Тубетея, я&nbsp;был
+                        	приятно удивлён! Зайдя в&nbsp;заведение, меня радужно встретили и&nbsp;объяснили,
+                        	что мир виртуальной реальности интереснее чем кажется на&nbsp;первый взгляд.
+                        	Взяв 15&nbsp;минут на&nbsp;игру, вышел оттуда в&nbsp;итоге через 3&nbsp;часа))
+                        	причём оплата у&nbsp;них идёт постфактум, то&nbsp;есть вы&nbsp;платите уже за&nbsp;проведённое
+                        	время там, а&nbsp;не&nbsp;ограничиваете себя минутами изначально, как мы&nbsp;привыкли это делать
+                        	в&nbsp;компьютерных клубах. Играл в&nbsp;beat saber, бокс и&nbsp;контр-страйк. КС&nbsp;сложный,
+                        	но&nbsp;приноровившись, тебя затягивает.<br>	В&nbsp;следующий раз приведу друзей, потому что в&nbsp;соседней
+                        	комнате смех двух друзей во&nbsp;время игры в&nbsp;бокс был слышен на&nbsp;все заведение,
+                        	очень им&nbsp;завидовал))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _first" data-src="img/image-review.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review2.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _second" data-src="img/image-review2.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review3.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _third" data-src="img/image-review3.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review4.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _fourth" data-src="img/image-review4.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <div class="reviews-slider__item">
+                    <div class="reviews-slider__head">
+                      <div class="reviews-slider__logo"><img class="reviews-slider__image" src="img/slider-logo.png" alt="Эмиль Ш."></div>
+                      <div class="reviews-slider__info"><span class="reviews-slider__name">	Эмиль Ш.</span><span class="reviews-slider__text">	знаток города</span><span class="reviews-slider__text">	26 апреля 2019</span></div>
+                    </div>
+                    <div class="reviews-slider__content">
+                      <p>
+                        	Случайно наткнувшись на&nbsp;это место, припарковавшись у&nbsp;Тубетея, я&nbsp;был
+                        	приятно удивлён! Зайдя в&nbsp;заведение, меня радужно встретили и&nbsp;объяснили,
+                        	что мир виртуальной реальности интереснее чем кажется на&nbsp;первый взгляд.
+                        	Взяв 15&nbsp;минут на&nbsp;игру, вышел оттуда в&nbsp;итоге через 3&nbsp;часа))
+                        	причём оплата у&nbsp;них идёт постфактум, то&nbsp;есть вы&nbsp;платите уже за&nbsp;проведённое
+                        	время там, а&nbsp;не&nbsp;ограничиваете себя минутами изначально, как мы&nbsp;привыкли это делать
+                        	в&nbsp;компьютерных клубах. Играл в&nbsp;beat saber, бокс и&nbsp;контр-страйк. КС&nbsp;сложный,
+                        	но&nbsp;приноровившись, тебя затягивает.<br>	В&nbsp;следующий раз приведу друзей, потому что в&nbsp;соседней
+                        	комнате смех двух друзей во&nbsp;время игры в&nbsp;бокс был слышен на&nbsp;все заведение,
+                        	очень им&nbsp;завидовал))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _first" data-src="img/image-review.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review2.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _second" data-src="img/image-review2.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review3.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _third" data-src="img/image-review3.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review4.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _fourth" data-src="img/image-review4.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <div class="reviews-slider__item">
+                    <div class="reviews-slider__head">
+                      <div class="reviews-slider__logo"><img class="reviews-slider__image" src="img/slider-logo.png" alt="Эмиль Ш."></div>
+                      <div class="reviews-slider__info"><span class="reviews-slider__name">	Эмиль Ш.</span><span class="reviews-slider__text">	знаток города</span><span class="reviews-slider__text">	26 апреля 2019</span></div>
+                    </div>
+                    <div class="reviews-slider__content">
+                      <p>
+                        	Случайно наткнувшись на&nbsp;это место, припарковавшись у&nbsp;Тубетея, я&nbsp;был
+                        	приятно удивлён! Зайдя в&nbsp;заведение, меня радужно встретили и&nbsp;объяснили,
+                        	что мир виртуальной реальности интереснее чем кажется на&nbsp;первый взгляд.
+                        	Взяв 15&nbsp;минут на&nbsp;игру, вышел оттуда в&nbsp;итоге через 3&nbsp;часа))
+                        	причём оплата у&nbsp;них идёт постфактум, то&nbsp;есть вы&nbsp;платите уже за&nbsp;проведённое
+                        	время там, а&nbsp;не&nbsp;ограничиваете себя минутами изначально, как мы&nbsp;привыкли это делать
+                        	в&nbsp;компьютерных клубах. Играл в&nbsp;beat saber, бокс и&nbsp;контр-страйк. КС&nbsp;сложный,
+                        	но&nbsp;приноровившись, тебя затягивает.<br>	В&nbsp;следующий раз приведу друзей, потому что в&nbsp;соседней
+                        	комнате смех двух друзей во&nbsp;время игры в&nbsp;бокс был слышен на&nbsp;все заведение,
+                        	очень им&nbsp;завидовал))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _first" data-src="img/image-review.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review2.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _second" data-src="img/image-review2.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review3.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _third" data-src="img/image-review3.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review4.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _fourth" data-src="img/image-review4.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <div class="reviews-slider__item">
+                    <div class="reviews-slider__head">
+                      <div class="reviews-slider__logo"><img class="reviews-slider__image" src="img/slider-logo.png" alt="Эмиль Ш."></div>
+                      <div class="reviews-slider__info"><span class="reviews-slider__name">	Эмиль Ш.</span><span class="reviews-slider__text">	знаток города</span><span class="reviews-slider__text">	26 апреля 2019</span></div>
+                    </div>
+                    <div class="reviews-slider__content">
+                      <p>
+                        	Случайно наткнувшись на&nbsp;это место, припарковавшись у&nbsp;Тубетея, я&nbsp;был
+                        	приятно удивлён! Зайдя в&nbsp;заведение, меня радужно встретили и&nbsp;объяснили,
+                        	что мир виртуальной реальности интереснее чем кажется на&nbsp;первый взгляд.
+                        	Взяв 15&nbsp;минут на&nbsp;игру, вышел оттуда в&nbsp;итоге через 3&nbsp;часа))
+                        	причём оплата у&nbsp;них идёт постфактум, то&nbsp;есть вы&nbsp;платите уже за&nbsp;проведённое
+                        	время там, а&nbsp;не&nbsp;ограничиваете себя минутами изначально, как мы&nbsp;привыкли это делать
+                        	в&nbsp;компьютерных клубах. Играл в&nbsp;beat saber, бокс и&nbsp;контр-страйк. КС&nbsp;сложный,
+                        	но&nbsp;приноровившись, тебя затягивает.<br>	В&nbsp;следующий раз приведу друзей, потому что в&nbsp;соседней
+                        	комнате смех двух друзей во&nbsp;время игры в&nbsp;бокс был слышен на&nbsp;все заведение,
+                        	очень им&nbsp;завидовал))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _first" data-src="img/image-review.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review2.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _second" data-src="img/image-review2.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review3.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _third" data-src="img/image-review3.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <picture>
+                    <source type="image/webp" data-srcset="img/image-review4.webp" srcset="img/placeholder.png"/><img class="lazy reviews-slider__big-image _fourth" data-src="img/image-review4.jpg" alt="Наша площадка"/>
+                  </picture>
+                  <div class="reviews-slider__item">
+                    <div class="reviews-slider__head">
+                      <div class="reviews-slider__logo"><img class="reviews-slider__image" src="img/slider-logo.png" alt="Эмиль Ш."></div>
+                      <div class="reviews-slider__info"><span class="reviews-slider__name">	Эмиль Ш.</span><span class="reviews-slider__text">	знаток города</span><span class="reviews-slider__text">	26 апреля 2019</span></div>
+                    </div>
+                    <div class="reviews-slider__content">
+                      <p>
+                        	Случайно наткнувшись на&nbsp;это место, припарковавшись у&nbsp;Тубетея, я&nbsp;был
+                        	приятно удивлён! Зайдя в&nbsp;заведение, меня радужно встретили и&nbsp;объяснили,
+                        	что мир виртуальной реальности интереснее чем кажется на&nbsp;первый взгляд.
+                        	Взяв 15&nbsp;минут на&nbsp;игру, вышел оттуда в&nbsp;итоге через 3&nbsp;часа))
+                        	причём оплата у&nbsp;них идёт постфактум, то&nbsp;есть вы&nbsp;платите уже за&nbsp;проведённое
+                        	время там, а&nbsp;не&nbsp;ограничиваете себя минутами изначально, как мы&nbsp;привыкли это делать
+                        	в&nbsp;компьютерных клубах. Играл в&nbsp;beat saber, бокс и&nbsp;контр-страйк. КС&nbsp;сложный,
+                        	но&nbsp;приноровившись, тебя затягивает.<br>	В&nbsp;следующий раз приведу друзей, потому что в&nbsp;соседней
+                        	комнате смех двух друзей во&nbsp;время игры в&nbsp;бокс был слышен на&nbsp;все заведение,
+                        	очень им&nbsp;завидовал))
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section site-form">
+          <div class="_layer scary-hands lazy" data-bg="img/scary-hands.webp" data-bg-fallback="img/scary-hands.png"></div>
+          <div class="site-container site-form__container">
+            <div class="site-form__title">
+              <h2><span>	Получите 30&nbsp;минут в&nbsp;подарок *</span>	на&nbsp;первое посещение в&nbsp;любом из&nbsp;наших клубов</h2>
+              <p>	Примерьте новый формат развлечений на себя. Не по-детски затягивает даже взрослых.</p>
+            </div>
+            <form class="site-form__form" action="">
+              <div class="helmet lazy" data-bg="img/helmet.webp" data-bg-fallback="img/helmet.png"></div>
+              <label class="site-label site-form__label">
+                <input class="site-input" type="text" placeholder="Ваше имя">
+              </label>
+              <label class="site-label site-form__label">
+                <input class="site-input" type="text" placeholder="Ваш номер">
+              </label>
+              <label class="site-agreement site-form__agreemnt">
+                <input class="visually-hidden site-agreement__input" type="checkbox" checked="checked"><span class="site-agreement__text">	Я даю свое согласие на обработку персональных данных и&nbsp;соглашаюсь с<a class="site-agreement__link" href="">	политикой конфиденциальности</a></span>
+              </label>
+              <button class="button-reset third-button site-form__button">	Записаться
+                <svg class="icon icon-form-icon third-button__icon">
+                  <use xlink:href="img/sprite.svg#form-icon"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <picture>
+          <source type="image/webp" data-srcset="img/footer-img-mobile.webp" srcset="img/placeholder.png" media="(max-width: 575px)">
+          <source type="image/webp" data-srcset="img/footer-img.webp" srcset="img/placeholder.png"><img class="lazy site-footer__bg" data-src="img/footer-img.png" alt="фон">
+        </picture>
+        <div class="site-container site-footer__container">
+          <div class="site-footer__col"><a class="site-logo site-footer__logo" href=""><img class="site-logo__logo" src="img/logo.png" alt="Лого"><span class="site-logo__text">	Включим яркость твоих эмоций на MAX</span></a><span class="site-footer__text">	Клуб виртуальной реальности</span></div>
+          <div class="site-footer__col"><span class="site-footer__legeng">	2 клуба</span><span class="site-footer__adress">	Кремлевская, 21</span><span class="site-footer__adress">	Соловецкий юнг, 1</span><span class="site-footer__adress">	пн&nbsp;- чт: 10:00&nbsp;-&nbsp;22:00</span><span class="site-footer__adress">	пт&nbsp;- вс: 12:00&nbsp;-&nbsp;24:00</span></div>
+          <div class="site-footer__col"><span class="site-footer__subscribe">	Подписывайтесь</span><a class="site-footer__link" href="">
+              <svg class="icon icon-inst site-footer__link-icon">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg></a></div>
+          <div class="site-footer__col"><a class="phone-content" href="tel: +79391110857">	+7 (939) 111-08-57</a>
+            <button class="button-reset btn site-footer__button"><span>	Перезвонить мне</span></button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="js/main.js?v=0.0.0.0"></script>
+</html>
