@@ -42,7 +42,7 @@
   font-family: stampbor;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/Stampbor-Grunge.woff2) format("woff2"),url(../fonts/Stampbor-Grunge.woff) format("woff");
+  src: url(../fonts/Stampbor-Grunge.woff2) format("woff2");
 }
 
 *,
@@ -464,6 +464,84 @@ button:focus {
   fill: var(--color-white);
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 86px;
+  background-color: var(--color-dark-blue);
+  background-image: url(../img/preloader.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: opacity var(--main-transition);
+}
+
+.preloader__text {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 160px;
+  line-height: 1;
+}
+
+.preloader__logo {
+  margin-bottom: 21px;
+}
+
+.preloader__loader {
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+}
+
+.preloader__lodaer-name {
+  display: block;
+  width: 135px;
+  height: 23px;
+  margin: 0 auto 30px;
+  background-image: url(../img/loading.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.preloader__loader-line {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 100%;
+  height: 43px;
+  border: 2px solid var(--color-purple);
+}
+
+.preloader__loader-gradient-line {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 34px;
+  overflow: hidden;
+}
+
+.preloader__loader-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 538px;
+  height: 100%;
+  background-image: url(../img/gradient-color.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .site-header {
   position: absolute;
   top: 0;
@@ -614,8 +692,8 @@ button:focus {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 700px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -629,7 +707,7 @@ button:focus {
   max-width: 945px;
   margin-bottom: 152px;
   padding-left: 50px;
-  font-size: 80px;
+  font-size: 72px;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -782,7 +860,7 @@ button:focus {
 
 .hot-stock__title h2 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -798,6 +876,10 @@ button:focus {
   z-index: 5;
   display: flex;
   flex-direction: column;
+}
+
+.hot-stock__slider-nav._mobile {
+  display: none;
 }
 
 .hot-stock-slider {
@@ -988,7 +1070,7 @@ button:focus {
 
 .vr-room__title h2 {
   margin-bottom: 16px;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -1135,7 +1217,7 @@ button:focus {
   position: relative;
   z-index: 4;
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -1372,7 +1454,7 @@ button:focus {
 .differences__title h2 {
   position: relative;
   z-index: 4;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -1430,7 +1512,7 @@ button:focus {
 }
 
 .differences__item p {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.7;
 }
 
@@ -1684,7 +1766,7 @@ button:focus {
 
 .services__title h2 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -1952,7 +2034,7 @@ button:focus {
 
 .section-price__title h2 {
   margin: 0;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-transform: uppercase;
 }
@@ -2005,7 +2087,7 @@ button:focus {
   display: block;
   margin-bottom: 40px;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.4;
 }
 
@@ -2060,7 +2142,7 @@ button:focus {
 
 .reviews__title h2 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 55px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -2336,7 +2418,472 @@ button:focus {
   }
 }
 
+@media (max-width:1680px) {
+  .hero {
+    padding-top: 274px;
+  }
+
+  .hero__subtitle {
+    max-width: 243px;
+    font-size: 1.25rem;
+  }
+
+  .hero__subtitle::before {
+    top: 60%;
+    left: 40%;
+    width: 307px;
+    height: 307px;
+  }
+
+  .hero__container h1 {
+    margin-bottom: 110px;
+    font-size: 3.875rem;
+  }
+
+  .hero__container h1::before {
+    top: 22px;
+  }
+
+  .hero__button,
+  .hero__container ul {
+    margin-left: 230px;
+  }
+
+  .hero__rock {
+    bottom: 18px;
+    width: 156px;
+    height: 463px;
+  }
+
+  .hero__rock._small {
+    width: 90px;
+    height: 219px;
+  }
+
+  .hero__plane {
+    top: 138px;
+    left: 282px;
+    width: 154px;
+    height: 132px;
+  }
+
+  .hot-stock__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .hot-stock-slider__item {
+    padding: 72px 44px 166px;
+  }
+
+  .vr-room__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .vr-room__container {
+    max-width: 1155px;
+  }
+
+  .vr-room__vr-lines {
+    height: 1238px;
+    background-size: 112%;
+  }
+
+  .vr-room-slider {
+    margin-top: -405px;
+  }
+
+  .vr-room-slider__item {
+    height: 870px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .games-slider__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .games-slider__title h2::before {
+    left: -18px;
+    width: 109px;
+    height: 79px;
+    background-size: cover;
+  }
+
+  .games-slider__title h2::after {
+    right: -18px;
+    width: 109px;
+    height: 79px;
+    background-size: cover;
+  }
+
+  .games-slider__controls._right {
+    top: 160px;
+    right: 113px;
+    width: 211px;
+    height: 222px;
+  }
+
+  .games-slider__controls._left {
+    top: 230px;
+    left: 98px;
+    width: 212px;
+    height: 266px;
+  }
+
+  .games-slider__item-top {
+    height: 383px;
+  }
+
+  .differences {
+    padding-top: 494px;
+  }
+
+  .differences .digital-palms {
+    top: -257px;
+    height: 849px;
+  }
+
+  .differences .sonic {
+    width: 153px;
+    height: 115px;
+  }
+
+  .differences .DeLoreanDMC12 {
+    width: 1285px;
+    height: 186px;
+  }
+
+  .differences .CrashBandicoot {
+    top: -79px;
+    right: 115px;
+    width: 271px;
+    height: 156px;
+  }
+
+  .differences .smog {
+    top: -184px;
+    height: 750px;
+  }
+
+  .differences .dragon {
+    height: 1286px;
+  }
+
+  .differences__title {
+    max-width: 738px;
+  }
+
+  .differences__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .site-form {
+    padding-top: 499px;
+  }
+
+  .site-form__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .site-form__title p {
+    max-width: 456px;
+    font-size: 1.3rem;
+  }
+
+  .site-form .scary-hands {
+    height: 1522px;
+  }
+
+  .services__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .services__mineCraftCube-small {
+    display: none;
+  }
+
+  .services__mineCraftCube-smaller {
+    bottom: 167px;
+  }
+
+  .services__mineCraftCube-tiny {
+    left: 32px;
+  }
+
+  .section-price__title {
+    max-width: 370px;
+    height: 134px;
+  }
+
+  .section-price__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .section-price__bomb {
+    bottom: -120px;
+    left: -40px;
+    width: 215px;
+    height: 320px;
+  }
+
+  .section-price__diver {
+    width: 266px;
+    height: 101px;
+  }
+
+  .section-price__sharkkdodododo {
+    right: 71px;
+    bottom: -100px;
+    z-index: -1;
+    width: 531px;
+    height: 271px;
+  }
+
+  .section-price__tentacles {
+    top: -22px;
+    width: 367px;
+    height: 816px;
+  }
+
+  .section-price__item {
+    min-height: 406px;
+    padding: 44px 60px;
+  }
+
+  .reviews__title h2 {
+    font-size: 3.125rem;
+  }
+
+  .reviews__millenniumFalcon {
+    width: 762px;
+    height: 418px;
+  }
+
+  .reviews__millenniumFalcon-ship {
+    width: 709px;
+    height: 297px;
+  }
+
+  .reviews__millenniumFalcon-light {
+    width: 499px;
+    height: 387px;
+  }
+
+  .reviews-slider__big-image._first {
+    width: 420px;
+    height: 570px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .reviews-slider__big-image._second {
+    right: 236px;
+    width: 390px;
+    height: 430px;
+  }
+
+  .reviews-slider__big-image._third {
+    bottom: 428px;
+    width: 398px;
+    height: 508px;
+  }
+
+  .reviews-slider__big-image._fourth {
+    bottom: 258px;
+    width: 458px;
+    height: 448px;
+  }
+}
+
 @media (max-width:1536px) {
+  .hero {
+    padding-bottom: 140px;
+  }
+
+  .hero__rock {
+    display: none;
+  }
+
+  .hero__rock._small {
+    display: block;
+  }
+
+  .hero__button,
+  .hero__container ul {
+    margin-left: 50px;
+  }
+
+  .vr-room__vr-lines {
+    display: none;
+  }
+
+  .vr-room__container {
+    max-width: 1177px;
+  }
+
+  .games-slider {
+    padding-top: 160px;
+  }
+
+  .games-slider__item-top {
+    height: 333px;
+    margin-bottom: 20px;
+  }
+
+  .games-slider__item-heading {
+    font-size: 1.8rem;
+  }
+
+  .games-slider__item-subheading {
+    font-size: 1rem;
+  }
+
+  .games-slider__item-subheading::before {
+    top: -3px;
+  }
+
+  .games-slider__item-hover-text {
+    width: 160px;
+    height: 160px;
+    font-size: 1rem;
+  }
+
+  .differences {
+    padding-bottom: 160px;
+  }
+
+  .differences__list {
+    row-gap: 67px;
+  }
+
+  .differences__item {
+    height: 312px;
+    background-size: contain;
+  }
+
+  .differences__item p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .differences__item-img {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 18px;
+  }
+
+  .differences__item-legend {
+    font-size: 1.4rem;
+  }
+
+  .differences__item-text {
+    font-size: 1rem;
+  }
+
+  .site-form .helmet {
+    bottom: 20px;
+    width: 540px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .services__cube-img {
+    left: 291px;
+    width: 834px;
+    height: 258px;
+  }
+
+  .services__mineCraftCubeTNT-small {
+    bottom: 51px;
+    left: 517px;
+    width: 148px;
+    height: 143px;
+  }
+
+  .services__mineCraftCubeTNT-smaller {
+    bottom: 20px;
+    left: 847px;
+    width: 76px;
+    height: 73px;
+  }
+
+  .services__mineCraftCube-tiny {
+    left: 122px;
+  }
+
+  .services__mineCraftCube {
+    right: -200px;
+    bottom: -140px;
+  }
+
+  .accordion__item-image {
+    width: 336px;
+    height: 394px;
+  }
+
+  .accordion__item-left {
+    width: 37%;
+  }
+
+  .section-price__item {
+    min-height: 386px;
+  }
+
+  .section-price__item-head {
+    font-size: 1.625rem;
+  }
+
+  .section-price__item-price {
+    font-size: 1.125rem;
+  }
+
+  .section-price__button {
+    padding: 23px;
+  }
+
+  .section-price__diver {
+    left: 251px;
+  }
+
+  .section-price__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-price__sharkkdodododo {
+    right: 51px;
+  }
+
+  .reviews__slider-navigation {
+    margin-left: 49%;
+  }
+
+  .reviews-slider__big-image._first {
+    left: 64px;
+  }
+
+  .reviews-slider__big-image._second {
+    right: 236px;
+    width: 390px;
+    height: 430px;
+  }
+
+  .reviews-slider__big-image._third {
+    bottom: 428px;
+    width: 398px;
+    height: 508px;
+  }
+
+  .reviews-slider__big-image._fourth {
+    bottom: 288px;
+  }
+
+  .reviews-slider__item {
+    margin-left: 35%;
+  }
+
   .site-footer__container {
     padding-bottom: 60px;
   }
@@ -2364,9 +2911,307 @@ button:focus {
   .site-header__container {
     padding-right: 253px;
   }
+
+  .hot-stock-slider__item {
+    max-width: 1190px;
+  }
+
+  .vr-room__container {
+    max-width: 100%;
+  }
+
+  .vr-room-slider {
+    margin-top: -362px;
+  }
+
+  .vr-room-slider__item {
+    height: 800px;
+  }
+
+  .reviews-slider__content p {
+    max-width: 385px;
+    font-size: 1rem;
+  }
+
+  .reviews-slider__slide {
+    padding-bottom: 413px;
+  }
+
+  .reviews-slider__item {
+    width: 444px;
+    padding: 67px 30px 38px;
+  }
+
+  .reviews-slider__big-image._first {
+    top: 0;
+    left: 14px;
+  }
+
+  .reviews-slider__big-image._second {
+    right: 156px;
+  }
+
+  .reviews-slider__big-image._fourth {
+    display: none;
+  }
 }
 
 @media (max-width:1366px) {
+  .site-input {
+    height: 74px;
+    padding: 22px 25px;
+  }
+
+  .hero__container h1 {
+    margin-bottom: 70px;
+    font-size: 3.125rem;
+  }
+
+  .hero__container ul {
+    -moz-column-gap: 38px;
+    column-gap: 38px;
+    row-gap: 45px;
+  }
+
+  .hero__container ul li {
+    font-size: 1.1rem;
+  }
+
+  .hero__subtitle {
+    max-width: 183px;
+    font-size: 1rem;
+  }
+
+  .hero__subtitle::before {
+    width: 247px;
+    height: 247px;
+  }
+
+  .hero__plane {
+    top: 118px;
+    left: 212px;
+    width: 124px;
+    height: 102px;
+  }
+
+  .hot-stock__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .hot-stock-slider__item {
+    max-width: 1070px;
+    padding: 72px 44px 96px;
+  }
+
+  .vr-room__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .vr-room__title p {
+    margin-left: 46px;
+    font-size: 1.2rem;
+  }
+
+  .vr-room__title p::before {
+    top: 6px;
+  }
+
+  .vr-room-slider__info {
+    top: 292px;
+  }
+
+  .vr-room-slider__item {
+    height: 740px;
+  }
+
+  .games-slider {
+    padding-top: 140px;
+  }
+
+  .games-slider__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .differences {
+    padding-top: 414px;
+  }
+
+  .differences .digital-palms {
+    height: 685px;
+  }
+
+  .differences .CrashBandicoot {
+    top: -99px;
+    right: 65px;
+    width: 231px;
+    height: 126px;
+  }
+
+  .differences .DeLoreanDMC12 {
+    width: 885px;
+    height: 126px;
+  }
+
+  .differences .sonic {
+    top: -50px;
+    width: 123px;
+    height: 95px;
+  }
+
+  .differences .smog {
+    height: 530px;
+  }
+
+  .differences .dragon {
+    top: -50px;
+    height: 1036px;
+  }
+
+  .differences__title {
+    max-width: 628px;
+  }
+
+  .differences__title h2 {
+    margin-bottom: 0;
+    font-size: 2.8125rem;
+  }
+
+  .differences__list {
+    row-gap: 37px;
+  }
+
+  .differences__item {
+    background-size: 100%;
+  }
+
+  .site-form {
+    padding-top: 419px;
+  }
+
+  .site-form__title h2 {
+    font-size: 2.5rem;
+  }
+
+  .site-form__button {
+    padding: 25px;
+  }
+
+  .site-form .helmet {
+    bottom: 70px;
+    width: 510px;
+    height: 310px;
+  }
+
+  .site-form .scary-hands {
+    height: 1292px;
+  }
+
+  .services__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .services__mineCraftCube {
+    right: -160px;
+    bottom: -60px;
+    width: 348px;
+    height: 310px;
+  }
+
+  .accordion__item-heading {
+    font-size: 1.5rem;
+  }
+
+  .accordion__item-legend {
+    font-size: 1.25rem;
+  }
+
+  .accordion__item-info ul li {
+    font-size: 1.125rem;
+  }
+
+  .accordion__item-image {
+    width: 286px;
+    height: 334px;
+  }
+
+  .accordion__button {
+    padding: 21px 43px;
+  }
+
+  .section-price__mineCraftCube {
+    top: -70px;
+    left: -220px;
+    width: 328px;
+    height: 310px;
+  }
+
+  .section-price__list {
+    margin-bottom: 44px;
+  }
+
+  .section-price__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .section-price__item {
+    padding: 38px 30px;
+  }
+
+  .section-price__item-head {
+    margin-bottom: 25px;
+    line-height: 1.2;
+  }
+
+  .section-price__bomb {
+    display: none;
+  }
+
+  .section-price__diver {
+    left: 71px;
+  }
+
+  .section-price__sharkkdodododo {
+    right: -19px;
+  }
+
+  .section-price__text p {
+    font-size: 1rem;
+  }
+
+  .reviews__title h2 {
+    font-size: 2.8125rem;
+  }
+
+  .reviews__slider-navigation {
+    margin-bottom: 35px;
+  }
+
+  .reviews__millenniumFalcon {
+    bottom: -10px;
+    left: -40px;
+  }
+
+  .reviews-slider__big-image._first {
+    width: 360px;
+    height: 490px;
+  }
+
+  .reviews-slider__big-image._second {
+    right: 206px;
+    width: 330px;
+    height: 350px;
+  }
+
+  .reviews-slider__big-image._third {
+    bottom: 398px;
+    width: 368px;
+    height: 478px;
+  }
+
+  .reviews-slider__item {
+    margin-left: 33%;
+  }
+
   .site-footer__col:nth-of-type(1) {
     margin-right: 50px;
   }
@@ -2402,6 +3247,408 @@ button:focus {
 
   .site-header__contacts {
     padding-right: 24px;
+  }
+
+  .hero {
+    padding-top: 214px;
+  }
+
+  .hero__plane {
+    display: none;
+  }
+
+  .hero__container h1 {
+    max-width: 675px;
+    padding-left: 0;
+    font-size: 2.5rem;
+  }
+
+  .hero__container h1::before {
+    display: none;
+  }
+
+  .hero__button,
+  .hero__container ul {
+    margin-left: 0;
+  }
+
+  .hero__bg {
+    background-image: url(../img/hero-mobile.webp)!important;
+  }
+
+  .hot-stock {
+    margin-bottom: 113px;
+  }
+
+  .hot-stock__slider-nav {
+    position: static;
+    top: auto;
+    left: auto;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 202px;
+  }
+
+  .hot-stock__slider-nav._mobile {
+    display: flex;
+  }
+
+  .hot-stock__title {
+    max-width: 416px;
+    margin-bottom: 0;
+  }
+
+  .hot-stock__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .hot-stock__title h2 br {
+    display: none;
+  }
+
+  .hot-stock__title_wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .hot-stock-slider__heading {
+    font-size: 1.5rem;
+  }
+
+  .hot-stock-slider__text {
+    margin-bottom: 72px;
+    font-size: 1.125rem;
+  }
+
+  .hot-stock-slider__button::after {
+    width: 136px;
+    height: 136px;
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+
+  .hot-stock-slider .swiper-slide.swiper-slide-active .hot-stock-slider__item {
+    transform: none;
+  }
+
+  .hot-stock-slider__nav-button._right {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .vr-room__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .vr-room__title p {
+    max-width: 155px;
+  }
+
+  .vr-room-slider {
+    margin-top: -160px;
+  }
+
+  .vr-room-slider__info {
+    top: 200px;
+    right: auto;
+    left: 24px;
+  }
+
+  .games-slider {
+    padding-top: 70px;
+  }
+
+  .games-slider__title {
+    max-width: 424px;
+  }
+
+  .games-slider__title ._layer {
+    width: 448px;
+    height: 399px;
+  }
+
+  .games-slider__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .games-slider__title h2 span::after,
+  .games-slider__title h2 span::before {
+    display: none;
+  }
+
+  .games-slider__controls._left {
+    top: 90px;
+    left: 68px;
+    width: 152px;
+    height: 196px;
+  }
+
+  .games-slider__controls._right {
+    top: 130px;
+    right: 43px;
+    width: 151px;
+    height: 162px;
+  }
+
+  .games-slider__item-top {
+    height: 393px;
+  }
+
+  .differences {
+    background-position: 100% 15%;
+    background-size: contain;
+  }
+
+  .differences .digital-palms {
+    top: -180px;
+    height: 525px;
+  }
+
+  .differences .DeLoreanDMC12 {
+    top: -97px;
+    left: 0;
+    width: 715px;
+    height: 96px;
+  }
+
+  .differences .sonic {
+    top: -20px;
+    width: 103px;
+    height: 85px;
+  }
+
+  .differences .CrashBandicoot {
+    top: -79px;
+    right: 65px;
+    width: 181px;
+    height: 96px;
+  }
+
+  .differences .dragon {
+    top: 0;
+    height: 786px;
+  }
+
+  .differences .smog {
+    top: -84px;
+    height: 430px;
+  }
+
+  .differences__title {
+    max-width: 488px;
+    margin-bottom: 44px;
+  }
+
+  .differences__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .differences__item {
+    grid-column: 4 span;
+    height: 288px;
+    padding: 20px 15px;
+    background-size: contain;
+  }
+
+  .differences__item-img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .differences__item:first-child {
+    grid-column: 12 span;
+    height: auto;
+    padding: 22px 0;
+    text-align: center;
+  }
+
+  .site-form {
+    padding-top: 319px;
+  }
+
+  .site-form__title {
+    margin-bottom: 24px;
+  }
+
+  .site-form__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .site-form__title p {
+    max-width: 336px;
+    font-size: 1rem;
+  }
+
+  .site-form__form {
+    max-width: 419px;
+    padding: 30px 30px 307px;
+  }
+
+  .site-form .scary-hands {
+    height: 1082px;
+  }
+
+  .site-form .helmet {
+    width: 450px;
+    height: 280px;
+  }
+
+  .services {
+    margin-bottom: 225px;
+    padding-bottom: 249px;
+  }
+
+  .services__heading-line ._span {
+    font-size: 20px;
+  }
+
+  .services__title {
+    max-width: 642px;
+    margin-bottom: 44px;
+    padding-top: 210px;
+  }
+
+  .services__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .services__cube-img {
+    bottom: -79px;
+    left: 131px;
+    width: 500px;
+    height: 158px;
+  }
+
+  .services__mineCraftCube {
+    display: none;
+  }
+
+  .services__mineCraftCube-tiny {
+    left: 2px;
+    width: 66px;
+    height: 57px;
+  }
+
+  .services__mineCraftCubeTNT-small {
+    left: 417px;
+  }
+
+  .section-price {
+    margin-bottom: 90px;
+  }
+
+  .section-price__title {
+    max-width: 240px;
+    height: auto;
+  }
+
+  .section-price__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .section-price__title ._titleIcon {
+    font-size: 70px;
+  }
+
+  .section-price__mineCraftCube {
+    top: -170px;
+  }
+
+  .section-price__tentacles {
+    display: none;
+  }
+
+  .section-price__button {
+    position: static;
+    bottom: auto;
+    left: auto;
+    display: inline-flex;
+    width: auto;
+    margin-top: auto;
+    transform: none;
+  }
+
+  .section-price__list {
+    flex-wrap: wrap;
+  }
+
+  .section-price__item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .section-price__item:nth-child(1),
+  .section-price__item:nth-child(2) {
+    border-bottom: 1px solid #3b516c;
+  }
+
+  .section-price__item:nth-child(3) {
+    border-left: 1px solid #3b516c;
+  }
+
+  .section-price__item-price:nth-last-of-type(1) {
+    margin-bottom: 32px;
+  }
+
+  .section-price__sharkkdodododo {
+    bottom: -10px;
+    width: 391px;
+    height: 211px;
+  }
+
+  .section-price__diver {
+    width: 226px;
+    height: 101px;
+  }
+
+  .reviews__title h2 {
+    font-size: 2.1875rem;
+  }
+
+  .reviews__slider-navigation {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .reviews__millenniumFalcon {
+    bottom: 60px;
+    left: -70px;
+    width: 582px;
+    height: 318px;
+  }
+
+  .reviews__millenniumFalcon-ship {
+    width: 539px;
+    height: 237px;
+  }
+
+  .reviews__millenniumFalcon-light {
+    width: 399px;
+    height: 287px;
+  }
+
+  .reviews-slider__big-image._first {
+    display: none;
+  }
+
+  .reviews-slider__big-image._second {
+    right: 30px;
+    bottom: 50px;
+  }
+
+  .reviews-slider__big-image._third {
+    top: 40px;
+    right: 80px;
+    bottom: auto;
+  }
+
+  .reviews-slider__item {
+    margin-left: 0;
   }
 
   .site-footer__container {
@@ -2456,6 +3703,11 @@ button:focus {
 }
 
 @media (max-width:992px) {
+  .slider-navigation__nav-button {
+    width: 72px;
+    height: 72px;
+  }
+
   .site-header__container {
     padding-right: 24px;
   }
@@ -2463,9 +3715,410 @@ button:focus {
   .site-header__contacts {
     display: none;
   }
+
+  .hot-stock__slider-nav._mobile {
+    max-width: 162px;
+  }
+
+  .hot-stock-slider__item {
+    padding: 52px 24px 76px;
+  }
+
+  .hot-stock-slider__item::before {
+    border-width: 0 0 115px 115px;
+  }
+
+  .hot-stock-slider__item::after {
+    width: 95px;
+    height: 95px;
+  }
+
+  .hot-stock-slider__heading {
+    max-width: 176px;
+  }
+
+  .hot-stock-slider__text {
+    max-width: 214px;
+  }
+
+  .vr-room__title {
+    max-width: 487px;
+  }
+
+  .vr-room-slider {
+    margin-top: -120px;
+  }
+
+  .vr-room-slider__item {
+    height: 610px;
+  }
+
+  .vr-room-slider__info {
+    padding: 20px 49px 37px 22px;
+  }
+}
+
+@media (max-width:769px) {
+  .hero__rock._small {
+    display: none;
+  }
+
+  .games-slider__navigation {
+    width: 166px;
+  }
+
+  .games-slider__title {
+    max-width: 374px;
+  }
+
+  .games-slider__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .games-slider__controls._left {
+    top: 140px;
+    left: 28px;
+    width: 132px;
+    height: 166px;
+  }
+
+  .games-slider__controls._right {
+    top: 120px;
+    right: 23px;
+    width: 131px;
+    height: 142px;
+  }
+
+  .games-slider__item-top {
+    height: 343px;
+  }
+
+  .games-slider__item-headig {
+    font-size: 1.4rem;
+  }
+
+  .games-slider__item-subheading::before {
+    top: 0;
+  }
+
+  .differences__list {
+    gap: 20px;
+    row-gap: 30px;
+  }
+
+  .differences__item {
+    grid-column: 6 span;
+    height: 295px;
+  }
+
+  .differences {
+    padding-top: 224px;
+    background-position: 100% 5%;
+  }
+
+  .differences .CrashBandicoot {
+    display: none;
+  }
+
+  .differences .digital-palms {
+    top: -110px;
+    height: 355px;
+  }
+
+  .differences .DeLoreanDMC12 {
+    top: -57px;
+    left: -50px;
+    width: 535px;
+    height: 77px;
+  }
+
+  .differences .sonic {
+    top: 10px;
+    width: 83px;
+    height: 65px;
+  }
+
+  .differences .dragon {
+    height: 476px;
+  }
+
+  .differences__title {
+    max-width: 438px;
+    margin-bottom: 19px;
+  }
+
+  .differences__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .site-form {
+    padding-top: 299px;
+  }
+
+  .site-form .scary-hands {
+    height: 862px;
+  }
+
+  .services {
+    margin-bottom: 185px;
+  }
+
+  .services__heading-line._line-first {
+    transform: translateX(-50%) rotate(8deg);
+  }
+
+  .services__heading-line._line-second {
+    transform: translateX(-50%) rotate(-6deg);
+  }
+
+  .services__mineCraftCube-smaller {
+    bottom: 87px;
+  }
+
+  .services__mineCraftCubeTNT-smaller {
+    right: 260px;
+    left: auto;
+  }
+
+  .services__mineCraftCubeTNT-small {
+    left: 265px;
+    width: 98px;
+    height: 93px;
+  }
+
+  .services__mineCraftCube-tiny {
+    left: auto;
+    right: 20px;
+  }
+
+  .accordion__item-heading {
+    max-width: 170px;
+  }
+
+  .accordion__item-image {
+    width: 236px;
+    height: 274px;
+  }
+
+  .section-price__mineCraftCube {
+    display: none;
+  }
+
+  .section-price__diver {
+    left: 21px;
+    width: 196px;
+    height: 81px;
+  }
+
+  .section-price__sharkkdodododo {
+    right: -119px;
+    width: 341px;
+    height: 171px;
+  }
+
+  .reviews__slider-navigation {
+    max-width: 166px;
+  }
+
+  .reviews-slider__big-image._second {
+    z-index: 6;
+    right: -10px;
+    bottom: 90px;
+    display: none;
+  }
+
+  .reviews-slider__big-image._third {
+    display: none;
+  }
+
+  .reviews-slider__item {
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none;
+    background-color: var(--color-dark-blue);
+    border: .5px solid var(--color-grey);
+    width: 97%;
+  }
+
+  .reviews-slider__content p {
+    max-width: 90%;
+  }
+
+  .reviews-slider__slide {
+    padding-bottom: 263px;
+  }
 }
 
 @media (max-width:740px) {
+  .hero {
+    padding-bottom: 90px;
+  }
+
+  .hero__container h1 {
+    margin-bottom: 40px;
+  }
+
+  .hero__container ul {
+    -moz-column-gap: 18px;
+    column-gap: 18px;
+    row-gap: 25px;
+  }
+
+  .hero__container ul li {
+    z-index: 10;
+  }
+
+  .hot-stock {
+    margin-bottom: 83px;
+  }
+
+  .hot-stock__title h2 {
+    font-size: 2rem;
+  }
+
+  .hot-stock-slider__item {
+    padding: 32px 24px 66px;
+  }
+
+  .hot-stock-slider__heading {
+    max-width: 286px;
+    font-size: 1.2rem;
+  }
+
+  .hot-stock-slider__text {
+    max-width: 184px;
+    font-size: 1rem;
+  }
+
+  .hot-stock-slider__button::after {
+    right: -24px;
+    width: 96px;
+    height: 96px;
+  }
+
+  .vr-room__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .vr-room-slider__info {
+    max-width: 298px;
+  }
+
+  .games-slider {
+    margin-bottom: 122px;
+  }
+
+  .games-slider__item-top {
+    height: 282px;
+  }
+
+  .differences {
+    padding-bottom: 80px;
+  }
+
+  .differences__item {
+    background-image: none;
+    height: auto;
+    justify-content: stretch;
+  }
+
+  .site-form__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .services {
+    margin-bottom: 155px;
+    padding-bottom: 179px;
+  }
+
+  .services__cube-img {
+    left: 0;
+  }
+
+  .services__mineCraftCube-smaller,
+  .services__mineCraftCube-tiny,
+  .services__mineCraftCubeTNT-small,
+  .services__mineCraftCubeTNT-smaller {
+    display: none;
+  }
+
+  .accordion__item-image {
+    display: none;
+  }
+
+  .accordion__item-bottom,
+  .accordion__item-top {
+    flex-direction: column;
+  }
+
+  .accordion__item-bottom {
+    padding-top: 22px;
+  }
+
+  .accordion__item-left {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .accordion__item-heading {
+    max-width: 100%;
+  }
+
+  .accordion__close,
+  .accordion__close ._line {
+    width: 22px;
+  }
+
+  .section-price__title {
+    max-width: 220px;
+  }
+
+  .section-price__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .section-price__title ._titleIcon {
+    font-size: 50px;
+  }
+
+  .section-price__item {
+    min-height: 356px;
+    padding: 28px 20px;
+  }
+
+  .section-price__item-head {
+    font-size: 1.25rem;
+  }
+
+  .section-price__item-price {
+    font-size: 1rem;
+  }
+
+  .section-price__button {
+    padding: 19px 23px;
+  }
+
+  .reviews__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .reviews__millenniumFalcon {
+    width: 442px;
+    height: 208px;
+  }
+
+  .reviews__millenniumFalcon-ship {
+    width: 399px;
+    height: 167px;
+  }
+
+  .reviews__millenniumFalcon-light {
+    width: 259px;
+    height: 177px;
+  }
+
   .site-footer__logo {
     display: inline-block;
   }
@@ -2511,6 +4164,59 @@ button:focus {
     padding-left: 20px;
   }
 
+  .hero {
+    padding-top: 184px;
+  }
+
+  .hero__container h1 {
+    font-size: 2.1875rem;
+  }
+
+  .hot-stock__title_wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hot-stock__title {
+    max-width: 356px;
+    margin-bottom: 24px;
+  }
+
+  .hot-stock-slider__heading::before,
+  .hot-stock-slider__item::after,
+  .hot-stock-slider__item::before {
+    display: none;
+  }
+
+  .hot-stock-slider__button {
+    font-size: 17px;
+  }
+
+  .differences {
+    padding-top: 144px;
+    background-position: 100% 0;
+  }
+
+  .differences .DeLoreanDMC12,
+  .differences .digital-palms,
+  .differences .sonic {
+    display: none;
+  }
+
+  .differences .smog {
+    top: -124px;
+    height: 250px;
+  }
+
+  .differences .dragon {
+    top: -100px;
+    height: 396px;
+  }
+
+  .site-form .scary-hands {
+    display: none;
+  }
+
   .site-footer__container {
     padding-bottom: 10px;
   }
@@ -2537,6 +4243,216 @@ button:focus {
     padding-top: 18px;
   }
 
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+
+  .hero::before {
+    display: none;
+  }
+
+  .hero__bg {
+    top: auto;
+    bottom: 170px;
+    right: -20px;
+    left: auto;
+    width: 101%;
+    height: 50%;
+  }
+
+  .hero__container h1 br,
+  .hero__subtitle::before {
+    display: none;
+  }
+
+  .hero__container ul {
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 7px;
+    margin-bottom: 24px;
+  }
+
+  .hero__container ul li {
+    grid-column: 12 span;
+  }
+
+  .hero__button {
+    font-size: 1rem;
+  }
+
+  .hero__button::after,
+  .hero__button::before {
+    top: 5px;
+    height: 79px;
+  }
+
+  .hot-stock-slider {
+    width: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .vr-room-slider__info {
+    padding: 20px 20px 27px 22px;
+    font-size: 1rem;
+  }
+
+  .games-slider__controls {
+    display: none;
+  }
+
+  .games-slider__title {
+    max-width: 234px;
+  }
+
+  .games-slider__item:nth-of-type(2n) {
+    transform: none;
+  }
+
+  .games-slider__item-top {
+    height: 232px;
+  }
+
+  .games-slider__item-heading {
+    font-size: 1.3rem;
+  }
+
+  .games-slider__navigation {
+    margin-bottom: 46px;
+  }
+
+  .differences__item {
+    padding: 15px 4px;
+  }
+
+  .differences__item p {
+    font-size: 1rem;
+  }
+
+  .differences__item-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .differences__item-legend {
+    line-height: 1.2;
+  }
+
+  .differences__list {
+    row-gap: 10px;
+  }
+
+  .site-form .helmet {
+    width: 340px;
+    height: 211px;
+  }
+
+  .site-form__form {
+    padding-bottom: 257px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .services {
+    padding-bottom: 129px;
+  }
+
+  .services__title h2 {
+    font-size: 1.875rem;
+  }
+
+  .services__heading-line {
+    padding: 29px 0;
+  }
+
+  .services__heading-line ._span {
+    margin-right: 34px;
+  }
+
+  .services__title {
+    padding-top: 160px;
+  }
+
+  .section-price {
+    margin-bottom: 120px;
+  }
+
+  .section-price__sharkkdodododo {
+    bottom: -150px;
+    width: 281px;
+    height: 141px;
+  }
+
+  .section-price__diver {
+    width: 146px;
+    height: 61px;
+    bottom: -80px;
+  }
+
+  .section-price__list {
+    margin-bottom: 34px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .section-price__item {
+    width: 100%;
+    border: none;
+  }
+
+  .section-price__item:nth-of-type(1) {
+    border-left: none;
+  }
+
+  .section-price__item:nth-of-type(3) {
+    border-left: none;
+    border-bottom: 1px solid #3b516c;
+  }
+
+  .section-price__text {
+    max-width: 315px;
+  }
+
+  .reviews__title {
+    margin-bottom: 14px;
+  }
+
+  .reviews__millenniumFalcon {
+    left: -10px;
+    bottom: 0;
+    width: 322px;
+    height: 168px;
+  }
+
+  .reviews__millenniumFalcon-ship {
+    width: 299px;
+    height: 134px;
+  }
+
+  .reviews__millenniumFalcon-light {
+    width: 209px;
+    height: 137px;
+  }
+
+  .reviews-slider__item {
+    padding: 30px 15px;
+  }
+
+  .reviews-slider__slide {
+    padding-bottom: 173px;
+  }
+
+  .reviews-slider__name {
+    font-size: 1.15rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+  .reviews-slider__text {
+    margin-right: 8px;
+  }
+
   .site-footer__col:nth-of-type(1),
   .site-footer__col:nth-of-type(2),
   .site-footer__col:nth-of-type(3) {
@@ -2547,6 +4463,68 @@ button:focus {
 @media (max-width:375px) {
   .site-logo__logo {
     max-width: 100px;
+  }
+}
+
+@media (max-width:360px) {
+  .hero__container h1 {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    max-width: 153px;
+  }
+
+  .hot-stock {
+    margin-bottom: 63px;
+  }
+
+  .hot-stock__title h2 {
+    font-size: 1.9rem;
+  }
+
+  .vr-room__title h2 {
+    font-size: 1.9rem;
+  }
+
+  .games-slider__title {
+    margin-bottom: 20px;
+  }
+
+  .games-slider__item-top {
+    height: 372px;
+  }
+
+  .services {
+    padding-bottom: 59px;
+    margin-bottom: 75px;
+  }
+
+  .services__cube-img {
+    display: none;
+  }
+
+  .section-price__title {
+    max-width: 190px;
+  }
+
+  .section-price__title ._titleIcon {
+    font-size: 40px;
+  }
+
+  .section-price__item {
+    min-height: 316px;
+  }
+
+  .section-price__item-price {
+    max-width: 194px;
+  }
+
+  .section-price__button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 }
 
@@ -2562,5 +4540,22 @@ button:focus {
 
   .site-logo__logo {
     max-width: 90px;
+  }
+
+  .vr-room-slider {
+    margin-top: -60px;
+  }
+
+  .vr-room-slider__item {
+    height: 440px;
+  }
+
+  .vr-room-slider__info {
+    max-width: 238px;
+    left: 16px;
+  }
+
+  .site-form {
+    padding-bottom: 20px;
   }
 }

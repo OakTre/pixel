@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание сайта">
+    <link rel="icon" href="favicon/favicon.png">
     <title>Главная | PixelArt</title>
     <link rel="stylesheet" href="./css/vendor.min.css?v=0.0.0.0">
     <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
+    <div class="preloader"><img class="preloader__logo" src="img/preloader-logo.webp" alt="Логотип">
+      <div class="preloader__loader"><span class="preloader__lodaer-name"></span>
+        <div class="preloader__loader-line"><span class="preloader__loader-gradient-line"><span class="preloader__loader-image"></span></span></div>
+      </div>
+      <div class="preloader__text">	0%</div>
+    </div>
     <div class="page-wrapper">
       <header class="site-header">
         <div class="site-container site-header__container"><a class="site-logo" href="" aria-label="Логотип"><img class="site-logo__logo" src="img/logo.png" alt="Лого"><span class="site-logo__text">	Включим яркость твоих эмоций на MAX</span></a>
@@ -47,8 +54,22 @@
         </section>
         <section class="section hot-stock">
           <div class="site-container hot-stock__container">
-            <div class="hot-stock__title">
-              <h2><span>	горячие акции</span>	сезона осень<br>	2021</h2>
+            <div class="hot-stock__title_wrap">
+              <div class="hot-stock__title">
+                <h2><span>	горячие акции</span>	сезона осень<br>	2021</h2>
+              </div>
+              <div class="hot-stock__slider-nav slider-navigation _mobile">
+                <button class="button-reset slider-navigation__nav-button _right hot-stock-slider__nav-button _mobile" aria-label="Переключить на следующий слайд">
+                  <svg class="icon icon-right-arrow-nav slider-navigation__nav-icon">
+                    <use xlink:href="img/sprite.svg#right-arrow-nav"></use>
+                  </svg>
+                </button>
+                <button class="button-reset slider-navigation__nav-button _left hot-stock-slider__nav-button _mobile" aria-label="Переключить на предыдущий слайд">
+                  <svg class="icon icon-left-arrow-nav slider-navigation__nav-icon">
+                    <use xlink:href="img/sprite.svg#left-arrow-nav"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="hot-stock__slider hot-stock-slider swiper-container">
               <div class="hot-stock__slider-nav slider-navigation">
@@ -66,28 +87,14 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="hot-stock-slider__item">
-                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image0.webp" data-bg-fallback="img/stock-image0.png"></div>
                     <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
                     <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="hot-stock-slider__item">
-                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
-                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
-                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="hot-stock-slider__item">
-                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
-                    <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
-                    <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="hot-stock-slider__item">
-                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image.webp" data-bg-fallback="img/stock-image.png"></div>
+                    <div class="hot-stock-slider__image lazy" data-bg="img/stock-image1.webp" data-bg-fallback="img/stock-image1.png"></div>
                     <h3 class="hot-stock-slider__heading">	Дарим 500 р. на первую игру</h3><span class="hot-stock-slider__text">	30 минут играй бесплатно Акция действует в будни до 16:00</span>
                     <button class="button-reset hot-stock-slider__button">	Бронировать время</button>
                   </div>
@@ -111,7 +118,7 @@
                   <div class="vr-room-slider__info-plus"><span class="_span"></span><span class="_span"></span></div>
                 </div>
               </div>
-              <div class="swiper-slide vr-room-slider__item lazy" data-bg="img/vr-room-image1.webp" data-bg-fallback="img/vr-room-image1.png">
+              <div class="swiper-slide vr-room-slider__item lazy" data-bg="img/vr-room-image0.webp" data-bg-fallback="img/vr-room-image1.png">
                 <div class="vr-room-slider__info">	Мягкое покрытие стен 100% травмобезопасность
                   <div class="vr-room-slider__info-plus"><span class="_span"></span><span class="_span"></span></div>
                 </div>
