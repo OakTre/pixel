@@ -7,9 +7,9 @@
     <meta name="description" content="Описание сайта">
     <link rel="icon" href="favicon/favicon.png">
     <title>Главная | PixelArt</title>
-    <link rel="stylesheet" href="./css/vendor.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/vendor.min.css?=0.0.1.1">
+    <link rel="stylesheet" href="./css/style.min.css?=0.0.1.1">
   </head>
   <body class="page-home">
     <div class="preloader"><img class="preloader__logo" src="img/preloader-logo.webp" alt="Логотип">
@@ -32,7 +32,8 @@
       </header>
       <main class="page-main main">
         <section class="hero">
-          <div class="hero__bg lazy" data-bg="img/hero-bg-jpg.webp" data-bg-fallback="img/hero-bg-jpg.png"></div>
+          <div class="hero__bg lazy" data-bg="img/hero-bg-jpg.webp" data-bg-fallback="img/hero-bg-jpg.jpg"></div>
+          <div class="hero__bg-stars lazy" data-bg="img/stars-mobile.webp" data-bg-fallback="img/stars-mobile.png"></div>
           <div class="_layer hero__rock lazy" data-bg="img/hero-rock.webp" data-bg-fallback="img/hero-rock.png"></div>
           <div class="_layer hero__rock _small lazy" data-bg="img/hero-rock-small.webp" data-bg-fallback="img/hero-rock-small.png"></div>
           <div class="_layer hero__plane _small lazy" data-bg="img/plane.webp" data-bg-fallback="img/plane.png"></div>
@@ -109,6 +110,18 @@
             <div class="vr-room__title">
               <h2><span>	vr-room</span>	для игр только своей компанией</h2>
               <p>	Без посторонних на площадке</p>
+            </div>
+            <div class="vr-room__slider-nav slider-navigation">
+              <button class="button-reset slider-navigation__nav-button vr-room__nav-button-left _left" aria-label="Переключить на предыдущий слайд">
+                <svg class="icon icon-left-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#left-arrow-nav"></use>
+                </svg>
+              </button>
+              <button class="button-reset slider-navigation__nav-button vr-room__nav-button-right _right" aria-label="Переключить на следующий слайд">
+                <svg class="icon icon-right-arrow-nav slider-navigation__nav-icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-nav"></use>
+                </svg>
+              </button>
             </div>
           </div>
           <div class="vr-room__slider vr-room-slider swiper-container">
@@ -651,7 +664,7 @@
       </footer>
     </div>
   </body>
-  <script src="js/vendor.js"></script>
-  <script src="js/fonts.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/vendor.js?=0.0.1.1"></script>
+  <script src="js/fonts.js?=0.0.1.1"></script>
+  <script src="js/main.js?=0.0.1.1"></script>
 </html>

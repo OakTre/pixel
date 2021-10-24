@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			families: ['stampbor'],
 			urls: ['./css/fonts.css'],
 		},
-		loading: function(familyName, fvd) {
+		fontloading: function(familyName, fvd) {
 			const progress = document.querySelector(".preloader__loader-gradient-line");
 			const preloader = document.querySelector(".preloader");
 			const progressText = document.querySelector(".preloader__text");
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					}, 500);
 					setTimeout(() => {
 						preloader.style.display = "none";
+						document.querySelector("body").classList.add("fontLoaded");
 					}, 600);
 				} else {
 					per = per + 2;
